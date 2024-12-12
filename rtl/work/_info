@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/xanth/modelSimProjects/ex_3/rtl
+vfifo
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1734008716
+!i10b 1
+!s100 feo;O3@;^iQ2CAVl@8ZBE2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`o2c_BPCkfk0eS<]NW^f<2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1734008405
+8fifo.sv
+Ffifo.sv
+!i122 0
+L0 1 94
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1734008716.000000
+!s107 fifo_priority_tb.sv|fifo_priority.sv|fifo.sv|
+Z7 !s90 -reportprogress|300|fifo.sv|fifo_priority.sv|fifo_priority_tb.sv|
+!i113 1
+Z8 tCvgOpt 0
+vfifo_priority
+R1
+R2
+!i10b 1
+!s100 ldh9P`B7aN]<WlOi6ORnK0
+R3
+InN49e1C_0h?cT[AX1C4F^1
+R4
+S1
+R0
+w1734006298
+8fifo_priority.sv
+Ffifo_priority.sv
+!i122 0
+L0 1 80
+R5
+r1
+!s85 0
+31
+R6
+Z9 !s107 fifo_priority_tb.sv|fifo_priority.sv|fifo.sv|
+R7
+!i113 1
+R8
+vfifo_priority_tb
+R1
+R2
+!i10b 1
+!s100 kMSc90VYiFLdOi6Z`:IF@3
+R3
+IE@fial7KdCT^PbHBm8j0T1
+R4
+S1
+R0
+w1734007177
+8fifo_priority_tb.sv
+Ffifo_priority_tb.sv
+!i122 0
+L0 1 100
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
