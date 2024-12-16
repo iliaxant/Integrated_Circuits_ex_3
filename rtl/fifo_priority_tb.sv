@@ -30,10 +30,10 @@ initial begin
 
   // Run 10 times
   repeat(10) begin
-    //sample from 0 to 5
-    repeat($urandom_range(5)) WRITE();
-    //sample from 0 to 5
-    repeat($urandom_range(5)) READ();
+    //sample from 1 to 10
+    repeat($urandom_range(10,1)) WRITE();
+    //sample from 1 to 10
+    repeat($urandom_range(10,1)) READ();
   end
 
   $stop;
