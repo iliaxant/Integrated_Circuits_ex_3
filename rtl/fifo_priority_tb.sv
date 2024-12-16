@@ -66,10 +66,10 @@ task automatic WRITE();
   if (vld_i) begin
     if(rdy_o) begin
       $display("@ %t\t[WRITER] --> written [%9h] with priority: %1b", $time, data_in, data_in[DW-1]);
-      vld_i <= 1'b0;
     end else begin
       $display("@ %t\t[WRITER] --> denied [%9h]", $time, data_in);
     end
+    vld_i <= 1'b0;
   end else begin
     $display("@ %t\t[WRITER] --> idle", $time);
   end
@@ -79,6 +79,9 @@ endtask
 
 task automatic READ();
 
+  int unsigned n = $urandom_range(4, 2);
+  repeat(n) @(posedge clk);
+
   rdy_i <= $urandom_range(1,0);
   @(posedge clk);
   $display("@ %t\t[READER] --> rdy_i:%1b", $time, rdy_i);
@@ -86,10 +89,10 @@ task automatic READ();
   if (rdy_i) begin
     if (vld_o) begin
       $display("@ %t\t[READER] --> read [%9h] from priority: %1b ", $time, data_out, data_out[DW-1]);
-      vld_i <= 1'b0;
     end else begin
       $display("@ %t\t[READER] --> ignored non-valid data [%9h]", $time, data_out);
     end
+    rdy_i <= 1'b0;
   end else begin
     $display("@ %t\t[READER] --> idle", $time);
   end

@@ -79,8 +79,8 @@ always_ff @(posedge clk) begin
 
     // Return to zero 
     // if N and M are not a power of 2
-    if (head == (N-1)) head <= 'd0;
-    if (tail == (N-1)) tail <= 'd0;
+    if (head == (N)) head <= 'd0;
+    if (tail == (N)) tail <= 'd0;
   end
 end
 
