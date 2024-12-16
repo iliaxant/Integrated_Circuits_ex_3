@@ -18,8 +18,8 @@ module fifo_priority
   input  logic              rdy_i
 );
 
-logic hp_data, hp_data_out;
-logic np_data, np_data_out;
+logic[DW-1:0] hp_data, hp_data_out;
+logic[DW-1:0] np_data, np_data_out;
 
 logic hp_full, hp_empty;
 logic np_full, np_empty;
